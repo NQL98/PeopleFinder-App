@@ -1,0 +1,2 @@
+rootProject.name='People Finder App'
+include ':app'

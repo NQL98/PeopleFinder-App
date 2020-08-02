@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "283851938095",
+    "firebase_url": "https://people-finder-be52f.firebaseio.com",
+    "project_id": "people-finder-be52f",
+    "storage_bucket": "people-finder-be52f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:283851938095:android:6c470c7c4a8eea95d7e9da",
+        "android_client_info": {
+          "package_name": "com.example.peoplefinderapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "283851938095-brkkkqbpm42f4q1rm1kjtk94ppu12kjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.peoplefinderapp",
+            "certificate_hash": "faec2f45517f23e9abac75cf803cd0eeacb2eb98"
+          }
+        },
+        {
+          "client_id": "283851938095-rjnrte66kc9qtntkkjbdgh5ah0lt9o9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKe02Zl8LNQr-qX5LLO0W2zp62nFJJnFc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "283851938095-rjnrte66kc9qtntkkjbdgh5ah0lt9o9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

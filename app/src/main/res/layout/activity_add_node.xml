@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNode"
+    android:id="@+id/activity_add_node">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appBarLayoutAddNode"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/toolbarAddNode"
+            app:title="Добавление записи"
+            app:titleTextColor="@android:color/white"
+            app:theme="@style/ToolbarColoredBackArrow">
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:id="@+id/scrollViewAddNode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBarLayoutAddNode"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView_FIO"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Фамилия Имя Отчество">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editText_FIO"
+                android:layout_below="@+id/textView_FIO"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Введите ФИО">
+            </EditText>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textUploadImage"
+                android:layout_below="@+id/editText_FIO"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:text="Загрузите фотографию">
+            </TextView>
+
+            <!--<ImageButton
+                android:id="@+id/btn_uploadImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textUploadImage"
+                android:layout_alignBottom="@+id/textUploadImage"
+                android:layout_toRightOf="@+id/textUploadImage"
+                android:src="@drawable/ic_upload_image"
+                android:background="@android:color/transparent"
+                android:clickable="true">
+            </ImageButton>-->
+
+            <!-- android:src="@drawable/no_image"
+            android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"-->
+
+            <ImageView
+                android:id="@+id/uploadedPhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/no_image"
+                android:scaleType="fitCenter"
+                android:layout_below="@+id/textUploadImage"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp">
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView_Description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/uploadedPhoto"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp"
+                android:text="Описание">
+            </TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/editDescription"
+                android:layout_below="@+id/textView_Description"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentStart="true"
+                android:inputType="textMultiLine|textCapSentences"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:hint="Введите описание">
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/btn_uploadNode"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_below="@id/editDescription"
+                android:src="@drawable/ic_upload_node"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:background="@color/colorPrimary"
+                android:scaleType="fitCenter"
+                android:clickable="true"
+                android:layout_marginBottom="40dp">
+            </ImageButton>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/btn_uploadNode"
+                android:text="Добавить запись"
+                android:layout_below="@id/editDescription"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="5dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp">
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:id="@+id/chat_list_item">
+
+    <TextView
+        android:id="@+id/messageTv_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:text="Имя"
+        android:textStyle="normal|bold"
+        android:visibility="invisible"></TextView>
+
+
+    <TextView
+        android:id="@+id/messageTv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignBottom="@+id/messageTv_user"
+        android:text="10:10"
+        android:layout_marginEnd="5dp">
+    </TextView>
+
+    <com.github.library.bubbleview.BubbleTextView
+        android:id="@+id/messageTv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/messageTv_user"
+        android:textSize="18sp"
+        android:textColor="#fff"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:padding="10dp"
+        app:angle="8dp"
+        android:text="Сообщение"
+        android:textStyle="bold"
+        app:arrowWidth="10dp"
+        app:arrowHeight="10dp"
+        app:arrowPosition="10dp"
+        app:arrowLocation="left"
+        app:bubbleColor="#707a8a">
+    </com.github.library.bubbleview.BubbleTextView>
+
+</RelativeLayout>
